@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTN - Guess The Number</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container center">
+        <main>
+            <div class="main-wrapper">
+                <h1 class="app-heading mb-15 mb-13-5">Guess The Number</h1>
+                <div class="game-section">
+                    <p class="mb-15 mb-13-5">Can you guess a number between <span class="min-number"></span> and <span class="max-number"></span>?</p>
+                    <section class="input-parameters mb-15 mb-13-5">
+                        <input type="number" id="guess-value" placeholder="Enter your chosen number..." step="any" required>
+                        <button type="submit" id="submit-guess" class="cus-p">Submit</button>
+                    </section>
+                    <p class="output-message"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="copyright-section">&copy;2023 Bacode Inc.</div>
+        </footer>
+    </div>
+    <script src="javascript/app.js"></script>
+</body>
+</html>

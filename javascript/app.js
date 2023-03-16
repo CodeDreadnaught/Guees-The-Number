@@ -19,7 +19,6 @@ outputMessageUI = document.querySelector(".output-message");
             localStorage.clear("minimum-number");
             localStorage.clear("maximum-number");
             localStorage.clear("actual-number");
-            setTimeout(removeGameInterfaceVisibility, 1340);
         }
     });
     document.addEventListener("DOMContentLoaded", getUserInfo);
@@ -265,7 +264,4 @@ function clearAlphabets(e) {
 }
 function obtainActualNumber(min, max) {
     return Math.floor(Math.random()*(max - min)) + min;
-}
-function removeGameInterfaceVisibility() {
-    mainWrapperUI.classList.add("vis-hidden");
 }

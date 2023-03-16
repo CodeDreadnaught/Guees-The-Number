@@ -31,7 +31,8 @@ main {
     width: 700px;
     border-radius: 4px;
     padding: 25px;
-    background: var(--bacode-white);
+    box-shadow: 0px 0px 5px var(--bacode-black);
+    background: rgba(255, 255, 255, 0.75);
 }
 .app-heading, .user-info-heading {
     font-size: 1.38em;

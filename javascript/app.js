@@ -159,8 +159,8 @@ function storeGameInfo(e) {
 
     const minimumNumberUI = document.querySelector("#minimum"),
     maximumNumberUI = document.querySelector("#maximum"),
-    minimumNumber = minimumNumberUI.value,
-    maximumNumber = maximumNumberUI.value,
+    minimumNumber = Number(minimumNumberUI.value),
+    maximumNumber = Number(maximumNumberUI.value),
     actualNumber = obtainActualNumber(minimumNumber, maximumNumber);
     
     localStorage.setItem("minimum-number", JSON.stringify(minimumNumber)),
@@ -262,5 +262,5 @@ function clearAlphabets(e) {
     }
 }
 function obtainActualNumber(min, max) {
-    return Math.floor(Math.random()*(max - min + 1) + min);
+    return Math.floor(Math.random()*(max - min)) + min;
 }

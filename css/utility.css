@@ -1,3 +1,6 @@
+.vis-hidden {
+    visibility: hidden;
+}
 .d-flex {
     display: flex;
 }
